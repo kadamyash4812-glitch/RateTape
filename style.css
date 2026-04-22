@@ -83,11 +83,45 @@ section {
 /* Products */ 
 .product { 
     display: inline-block; 
-    vertical-align: top; /* Ensures boxes stay aligned even if text length varies */
-    width: 250px; 
+    vertical-align: top;
+    width: 280px; /* Slightly wider to accommodate images better */
     margin: 15px; 
     padding: 15px; 
     background-color: white; 
     border-radius: 10px; 
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Softened the shadow for
-  }
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;       /* Makes image responsive to the box width */
+    height: 200px;      /* Fixed height for uniformity */
+    object-fit: cover;  /* Prevents image stretching */
+    border-radius: 5px;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #ff4d4d;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
