@@ -1,70 +1,93 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedTape Shoes</title>
+    <title>RedTape Shoes | Premium</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>RedTape Shoes</h1>
-        <p>Walk with Confidence</p>
-    </header>
-
     <nav>
-        <a href="#">Home</a>
-        <a href="#categories">Categories</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-content">
+            <h1 class="logo">RedTape</h1>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </nav>
 
-    <section class="banner">
-        <h2>Welcome to RedTape Shoes Store</h2>
-        <p>Best Quality Shoes at Affordable Prices</p>
-        <button>Shop Now</button>
+    <header class="banner fade-in">
+        <div class="banner-text">
+            <h2>Walk with <span class="text-gradient">Confidence.</span></h2>
+            <p>Best Quality Shoes at Affordable Prices. Redefined.</p>
+            <button class="btn-primary">Shop Now</button>
+        </div>
+    </header>
+
+    <section id="categories" class="fade-in">
+        <h2 class="section-title">Categories</h2>
+        <div class="grid-categories">
+            <div class="category-box">Sports Shoes</div>
+            <div class="category-box">Casual Shoes</div>
+            <div class="category-box">Formal Shoes</div>
+            <div class="category-box">Sneakers</div>
+        </div>
     </section>
 
-    <section id="categories">
-        <h2>Categories</h2>
-        <div class="category-box">Sports Shoes</div>
-        <div class="category-box">Casual Shoes</div>
-        <div class="category-box">Formal Shoes</div>
-        <div class="category-box">Sneakers</div>
-    </section>
+    <section id="products" class="fade-in">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="grid-products">
+            
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_1824,c_limit/0bb50e61-e02f-40e7-9220-e17effebc983/the-most-comfortable-basketball-shoes-by-nike.jpg" alt="Sports Runner">
+                </div>
+                <div class="product-info">
+                    <h3>Sports Runner</h3>
+                    <p class="price">₹1999</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="https://cdn.nba.com/manage/2022/12/morant-nike-shoe.jpg" alt="Casual Wear">
+                </div>
+                <div class="product-info">
+                    <h3>Casual Wear</h3>
+                    <p class="price">₹1799</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_1920,c_limit/af082600-9cf2-4fe8-974a-3d246e874b4a/the-most-supportive-running-shoes-by-nike.jpg" alt="Formal Leather">
+                </div>
+                <div class="product-info">
+                    <h3>Formal Leather</h3>
+                    <p class="price">₹2499</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
 
-    <section id="products">
-        <h2>Featured Products</h2>
-        
-        <div class="product">
-            <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_1824,c_limit/0bb50e61-e02f-40e7-9220-e17effebc983/the-most-comfortable-basketball-shoes-by-nike.jpg" alt="Sports Runner">
-            <h3>Sports Runner</h3>
-            <p>Price: ₹1999</p>
-            <button>Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://cdn.nba.com/manage/2022/12/morant-nike-shoe.jpg" alt="Casual Wear">
-            <h3>Casual Wear</h3>
-            <p>Price: ₹1799</p>
-            <button>Add to Cart</button>
-        </div>
-        
-        <div class="product">
-            <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_1920,c_limit/af082600-9cf2-4fe8-974a-3d246e874b4a/the-most-supportive-running-shoes-by-nike.jpg" alt="Formal Leather">
-            <h3>Formal Leather</h3>
-            <p>Price: ₹2499</p>
-            <button>Add to Cart</button>
         </div>
     </section>
 
     <footer id="contact">
-        <p>Email: redtapeshoes@gmail.com</p>
-        <p>Contact: 9876543210</p>
-        <p>© 2026 RedTape Shoes. All Rights Reserved.</p>
+        <div class="footer-content">
+            <p>Email: redtapeshoes@gmail.com</p>
+            <p>Contact: 9876543210</p>
+            <p>© 2026 RedTape Shoes. All Rights Reserved.</p>
+        </div>
     </footer>
 
+    <div id="toast" class="toast hidden">Added to Cart!</div>
+
+    <script src="script.js"></script>
 </body>
 </html>
