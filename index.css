@@ -1,0 +1,93 @@
+/* General Reset & Body */
+body {
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background-color: #f4f6ff; 
+    text-align: center;
+}
+
+h1, h2, h3, p {
+    margin: 10px 0;
+}
+
+/* Header */ 
+header {
+    background-color: #ff4d4d; 
+    color: white; 
+    padding: 20px 15px;
+}
+
+/* Navigation */ 
+nav {
+    background-color: #333; 
+    padding: 15px;
+}
+
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover { 
+    color: yellow;
+}
+
+/* Banner */ 
+.banner {
+    background-color: #ffd633; 
+    padding: 40px 20px;
+}
+
+.banner button { 
+    padding: 10px 20px; 
+    background-color: #ff4d4d; 
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.banner button:hover { 
+    background-color: black;
+}
+
+/* Sections */ 
+section {
+    padding: 40px 20px; 
+}
+
+/* Categories */ 
+.category-box { 
+    display: inline-block; 
+    background-color: #66ccff; 
+    padding: 15px; 
+    margin: 10px; 
+    width: 150px; 
+    border-radius: 8px; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-box:hover { 
+    background-color: #3399ff; 
+    color: white;
+}
+
+/* Products */ 
+.product { 
+    display: inline-block; 
+    vertical-align: top; /* Ensures boxes stay aligned even if text length varies */
+    width: 250px; 
+    margin: 15px; 
+    padding: 15px; 
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Softened the shadow for
+  }
